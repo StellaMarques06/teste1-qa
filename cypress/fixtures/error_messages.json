@@ -1,0 +1,8 @@
+{
+  "campos_vazios": "×Nome é obrigatório×Email é obrigatório×Password é obrigatório",
+  "nome_vazio": "×Nome é obrigatório",
+  "email_vazio": "×Email é obrigatório",
+  "email_invalido": "×Email deve ser um email válido",
+  "senha_vazia": "×Password é obrigatório",
+  "email_repetido": "×Este email já está sendo usado"
+}

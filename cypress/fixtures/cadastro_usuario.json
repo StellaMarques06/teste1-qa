@@ -1,0 +1,14 @@
+{
+  "usuarios": {
+    "valido": {
+      "nome": "Stella Marques",
+      "email": "stella.valida@example.com",
+      "senha": "12345"
+    },
+    "email_invalido": {
+      "nome": "Stella Marques",
+      "email": "stella@texte.c",
+      "senha": "12345"
+    }
+  }
+}

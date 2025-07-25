@@ -1,88 +1,77 @@
-# 🧪 Projeto de Testes Automatizados - Cypress | Essor
+# 🧪 Testes Automatizados com Cypress - Projeto `teste1-qa`
 
-Este repositório contém a automação de testes end-to-end (E2E) desenvolvida com **Cypress**, aplicando **Page Objects**, **fixtures reutilizáveis**, boas práticas de programação e versionamento com `.gitignore`.
+Este projeto tem como objetivo automatizar testes de interface para a aplicação **Front Serverest Dev** (`https://front.serverest.dev/login`) utilizando **Cypress**, com foco em boas práticas, Page Objects e organização modular.
 
-O projeto foi desenvolvido como parte de um teste técnico para a empresa **Essor**, com o objetivo de validar funcionalidades de cadastro e login da aplicação:
-
-🔗 **Front Serverest Dev**:  
-[https://front.serverest.dev/login](https://front.serverest.dev/login)
+> Projeto desenvolvido como teste técnico para a empresa **Essor**.
 
 ---
 
-## ✅ Tecnologias Utilizadas
+## 📁 Estrutura do Projeto
 
-- [Cypress](https://www.cypress.io/)
-- Node.js
-- Faker.js (para geração dinâmica de dados)
-- JavaScript
-- Git
-
----
-
-## 🧱 Estrutura do Projeto
-
+```
 cypress/
-├── downloads/                          # Downloads feitos durante os testes
+├── downloads/                          # Downloads realizados nos testes
 ├── e2e/                                # Testes automatizados
 │   ├── cadastro_usuario.cy.js
 │   ├── home.cy.js
 │   └── login.cy.js
-├── fixtures/                           # Massa de dados e mensagens
-│   ├── cadastro_usuario.json           # Dados de entrada
-│   ├── error_messages.json             # Mensagens de erro esperadas
-│   └── success_messages.json           # Mensagens de sucesso esperadas
-├── reports/                            # Relatórios de execução
+├── fixtures/                           # Dados de entrada e mensagens esperadas
+│   ├── cadastro_usuario.json
+│   ├── error_messages.json
+│   └── success_messages.json
+├── reports/                            # Relatórios HTML
 │   └── html/
 │       ├── assets/
 │       ├── screenshots/
 │       └── index.html
-├── screenshots/                        # Evidências de falha nos testes
+├── screenshots/                        # Evidências de falhas
 │   └── login.cy.js
-├── support/                            # Configurações e comandos personalizados
-│   ├── pages/                          # Page Objects organizados
+├── support/                            # Comandos e Page Objects
+│   ├── pages/
 │   ├── commands.js
 │   └── e2e.js
-
-.gitignore
-cypress.config.js
-package.json
+.gitignore                              # Arquivos e pastas ignoradas pelo Git
+cypress.config.js                       # Configuração do Cypress
+package.json                            # Dependências e scripts
 package-lock.json
+```
 
 ---
 
 ## 🚀 Como Clonar e Rodar o Projeto
 
-1. Clone o repositório:
-
 ```bash
+# Clone o repositório
 git clone https://github.com/StellaMarques06/teste1-qa.git
+
+# Acesse o diretório
 cd teste1-qa
 
-2. Instale as dependências:
-
+# Instale as dependências
 npm install
 
-3. Execute os testes com a interface gráfica:
-
+# Rode os testes via Cypress UI
 npx cypress open
 
-4. Ou execute no modo headless (terminal):
-
+# Ou rode em modo headless
 npx cypress run
+```
 
-👨‍🏫 Objetivo adicional
-Este projeto também serve como material de apoio para ensinar outro desenvolvedor a:
+---
 
-Trabalhar com Cypress e Page Objects
+## 📌 Tecnologias e Padrões Utilizados
 
-Utilizar boas práticas de automação de testes
+- Cypress
+- Page Object Pattern
+- Fixtures (dados e mensagens)
+- Estrutura modular
+- `.gitignore` configurado
+- Relatórios HTML
+- Testes independentes e organizados
 
-Clonar e rodar um projeto com facilidade
+---
 
-Entender a importância do .gitignore e versionamento limpo
+## 👩‍💻 Desenvolvido por
 
-📄 Licença
-Este projeto está sob licença pessoal para fins de avaliação técnica.
-
-
-
+**Stella Marques**  
+[GitHub: @StellaMarques06](https://github.com/StellaMarques06)

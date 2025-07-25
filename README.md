@@ -22,20 +22,31 @@ O projeto foi desenvolvido como parte de um teste técnico para a empresa **Esso
 ## 🧱 Estrutura do Projeto
 
 cypress/
-├── e2e/
-│ └── cadastro_usuario.cy.js # Testes automatizados
-├── fixtures/
-│ ├── cadastro_usuario.json # Dados de entrada
-│ ├── mensagens_erro.json # Mensagens de erro esperadas
-│ └── mensagens_sucesso.json # Mensagens de sucesso esperadas
-├── support/
-│ ├── pages/ # Page Objects organizados
-│ ├── commands.js
-│ └── e2e.js
-.gitignore
-README.md
-package.json
+├── downloads/                          # Downloads feitos durante os testes
+├── e2e/                                # Testes automatizados
+│   ├── cadastro_usuario.cy.js
+│   ├── home.cy.js
+│   └── login.cy.js
+├── fixtures/                           # Massa de dados e mensagens
+│   ├── cadastro_usuario.json           # Dados de entrada
+│   ├── error_messages.json             # Mensagens de erro esperadas
+│   └── success_messages.json           # Mensagens de sucesso esperadas
+├── reports/                            # Relatórios de execução
+│   └── html/
+│       ├── assets/
+│       ├── screenshots/
+│       └── index.html
+├── screenshots/                        # Evidências de falha nos testes
+│   └── login.cy.js
+├── support/                            # Configurações e comandos personalizados
+│   ├── pages/                          # Page Objects organizados
+│   ├── commands.js
+│   └── e2e.js
 
+.gitignore
+cypress.config.js
+package.json
+package-lock.json
 
 ---
 
